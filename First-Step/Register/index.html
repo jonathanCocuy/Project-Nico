@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Sesión</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body-register">
+    <div class="bar"></div>
+    <main class="container-form">
+      <form class="form-register">
+        <div class="img-title">
+          <img class="img-logo" src="../Images/logo.png" alt="Logo" />
+          <h1 class="title-principal">REGISTRATE</h1>
+        </div>
+
+        <div class="div-inputs">
+          <div class="only-inputs">
+            <input
+              class="inputs"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ingrese su nombre"
+            />
+            <input
+              class="inputs"
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Ingrese sus apellidos"
+            />
+
+            <select name="type-dni" id="type-dni" class="inputs input-select" >
+              <option value="seleccione" selected disabled>
+                Seleccione tipo de documento
+              </option>
+              <option value="cc">Cédula de ciudadanía</option>
+              <option value="ce">Cédula de extranjería</option>
+              <option value="ti">Tarjeta de identidad</option>
+            </select>
+
+            <input
+              class="inputs dni-document"
+              type="number"
+              name="dni"
+              id="dni"
+              placeholder="Ingrese su documento"
+            />
+
+            <input
+              class="inputs"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ingrese su correo electrónico"
+            />
+            <input
+              class="inputs"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Ingrese su contraseña"
+            />
+            <input
+              class="inputs"
+              type="password"
+              name="confirm-pwd"
+              id="confirm-pwd"
+              placeholder="Confirma contraseña"
+            />
+            
+          </div>
+          <div class="checks">
+            <div class="see-password">
+              <input type="checkbox" /><p>Mostrar contraseña</p>
+            </div>
+
+            <div class="t-c">
+              <input type="checkbox" />
+              <p>Aceptar términos y condiciones</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="div-button-register">
+            <button class="button-register" type="submit">Registrarse</button>
+        </div>
+       
+        <hr style="width: 80%" />
+        
+        <div class="div-button-login">
+            <button class="button-login" id="buttonLogin">Inicia Sesión</button>
+          </div>
+      </form>
+    </main>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

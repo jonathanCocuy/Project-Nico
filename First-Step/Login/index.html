@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Sesión</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body-login">
+    <div class="bar"></div>
+    <main class="container-form">
+      <form class="form-login">
+        <div class="img-title">
+          <img class="img-logo" src="../Images/logo.png" alt="Logo" />
+          <h1 class="title-principal">INICIAR SESIÓN</h1>
+        </div>
+
+        <div class="div-inputs">
+          <div class="only-inputs">
+            <input
+              class="inputs"
+              type="email"
+              placeholder="Correo electrónico"
+            />
+            <input class="inputs" type="password" placeholder="Contraseña" />
+          </div>
+
+          <div class="see-password">
+            <input type="checkbox" />
+            <p>Mostrar contraseña</p>
+          </div>
+          <a class="link-password" href="#"
+            >¿Olvidaste tu contraseña? <br> Da click aquí</a
+          >
+        </div>
+
+        <div class="div-button-send">
+          <button class="button-send" type="submit">Ingresar</button>
+          <hr style="width: 80%;">
+        </div>
+
+        <button class="button-register" id="buttonRegister">
+          Registrate Aquí
+        </button>
+      </form>
+    </main>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
